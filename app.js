@@ -12,8 +12,8 @@ app.use(methodOverride("_method"));
 const ejsMate=require("ejs-mate");
 app.engine('ejs', ejsMate);
 
+const ExpressError = require("./utils/ExpressError.js");
 
-const ExpressError  = require("./utils/ExpressError.js");
 
 const session=require("express-session");
 const MongoStore=require('connect-mongo');
