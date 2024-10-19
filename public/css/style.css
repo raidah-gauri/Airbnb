@@ -22,37 +22,6 @@ nav{
 .navbar{
     font-size: 20px;
 }
-.btn-search{
-  border-radius: 15px;
-  padding: 0 1rem 0 1rem;
-}
-.input-search{
-  padding: 0.5rem 3rem 0.5rem 2rem;
-  border-radius:15px ;
-}
-.btn-search i{
-  display: inline;
-  margin-right: 0.5rem;
-}
-#filters {
-  display: flex;
-  flex-wrap: wrap; /* Allows filters to wrap onto the next line */
-  justify-content: space-between; /* Adjust spacing between filters */
-}
-
-.filter {
-  flex: 1 1 calc(50% - 10px); /* Two filters per row on small screens */
-  max-width: 45%; /* Ensure filters have a max width */
-  margin: 5px; /* Add margin for spacing */
-  text-align: center; /* Center the text */
-}
-
-@media (max-width: 576px) {
-  .filter {
-    flex: 1 1 100%; /* Make filters take full width on extra small screens */
-  }
-}
-
 /* Footer */
 .footer-display{
     height: 120px;
