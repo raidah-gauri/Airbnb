@@ -1,0 +1,201 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+}
+/* Navbar */
+nav{
+    height:90px;
+    background-color: #fff;
+    font-size: 17px;
+}
+.fa-compass{
+    color: #e93c48;
+    font-size: 34px;
+}
+.nav-link{
+    color: #222222 !important;
+}
+.navbar{
+    font-size: 20px;
+}
+/* Footer */
+.footer-display{
+    height: 120px;
+    padding: 12px 12px 12px 12px;
+    background-color: rgb(240, 239, 239);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+   
+}
+.social-media-links{
+    font-size: 24px;
+    color: #222222;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+.social-media-links i{
+    margin-left: 12px;
+}
+.social-media-links i:hover{
+    color:#504e4e;
+    cursor: pointer;
+    }
+
+.links{
+    width: 100%;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.links a{
+text-decoration: none;
+color: #222222;
+}
+.links a:hover{
+text-decoration: underline;
+}
+/* Index Route */
+/* Card */
+.card {
+    border: none;
+    margin-bottom: 26px;
+}
+.card-img-top{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.card-body{
+    padding: 3 !important;
+}
+/* Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.1;
+    background-color: white;
+}
+/* New.ejs */
+.form-control-style{
+height: 51px;
+}
+/* Show */
+.ard .show-img{
+border-radius:29px !important;
+height:29rem !important;
+width: 100%;
+object-fit: contain;
+}
+.card-text{
+    margin: 18px;
+}
+.show-btns{
+    display: flex;
+    padding: 6px;
+}
+.show-btns a{
+    height: 39px;
+    margin-left: 12px;
+}
+/* Review show */
+.btn-xs {
+    padding: .25rem .5rem;
+    font-size: .75rem;
+    position: relative;
+    left: 0px;
+    right: 200px;
+  }
+  /*Filters (Icons)  */
+ 
+#filters{
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter{
+  text-align: center;
+  margin: 12px;
+  margin-right: 40px;
+}
+.filter i{
+  font-size: 24px;
+}
+.filter p{
+  font-size: 18px;
+}
+.filter{
+  opacity: 0.6;
+}
+.filter:hover{
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.tax-toggle{
+  text-align: center;
+  padding: 20px;
+  height: 20%;
+  border-radius: 22px;
+  border: 2px solid rgb(184, 182, 182);
+}
+.tax-toggle input{
+  font-size: 23px;
+}
+.tax-toggle label{
+ font-weight: 500;
+}
+.form-check-input {
+   
+    background-color: white;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-check-input:checked {
+    background-color: black; /* Set the toggle inside to black when checked */
+    border-color: black; /* Change the border to match */
+  }
+
+  /* Changing the switch thumb (the round part) */
+  .form-check-input::before {
+    background-color: white; /* Default thumb color */
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease;
+  }
+
+  .form-check-input:checked::before {
+    transform: translateX(26px); /* Move thumb to the right when checked */
+    background-color: white; /* Keep the thumb white while background is black */
+  }
+  .tax-info{
+    display: none;
+  }
+  /* Search  */
+  .center-form {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+  }
+.center-form input{
+    /* width: 100%; */
+}
+
+

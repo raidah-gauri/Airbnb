@@ -1,0 +1,53 @@
+<style>
+  .btn-search{
+    border-radius: 15px;
+    padding: 0 1rem 0 1rem;
+  }
+  .input-search{
+    padding: 0.5rem 3rem 0.5rem 2rem;
+    border-radius:15px ;
+  }
+  .btn-search i{
+    display: inline;
+    margin-right: 0.5rem;
+  }
+</style>
+  <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/listings">Explore</a>
+        </div>
+      </div>
+
+      <div class="center-form ">
+        <form class="d-flex " role="search">
+          <input class="form-control me-2 input-search" type="search" placeholder="Search destinations" >
+          <button class="btn btn-outline-danger btn-search" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/listings/new">Airbnb your home</a>
+        </li>
+        <% if (!currUser) { %>
+          <button onclick="window.location.href='/signup'" class="btn btn-danger" style="margin-right: 12px;">Signup</button>
+          <button onclick="window.location.href='/login'" class="btn btn-danger">Login</button>
+      <% } %>
+      <% if (currUser) { %>
+          <button onclick="window.location.href='/logout'" class="btn">Logout</button>
+      <% } %>
+      
+
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>
